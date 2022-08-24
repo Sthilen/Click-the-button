@@ -48,19 +48,14 @@ function secret() {
             countSecret.innerHTML = ("I gave up!");
             break;
         case 9:
-            var a = document.createElement('a');
-            var linkText = document.createTextNode("Here it is!");
-            a.appendChild(linkText);
-            a.title = "Here it is";
-            a.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-            a.setAttribute("id","Secret-link")
-            document.body.appendChild(a);
+            document.getElementById("Link").innerHTML = "Here it is!"
+            document.getElementById("Link").href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             break;
         case 10:
             alert("I hate you")
-            document.getElementsById("Secret-link").innerHTML = "S"
-            console.log(5)
-            countSecret.innerHTML = ("Now leave me alone");
+            document.getElementById("Link").innerHTML = ""
+            document.getElementById("Link").href = ""
+            countSecret.innerHTML = ("Now leave me alone!");
             break;
         case 11:
             count = 0;
