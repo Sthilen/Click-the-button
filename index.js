@@ -53,7 +53,7 @@ function secret() {
             document.body.appendChild(a);
             break;
         case 10:
-            console.log(4)
+            alert("I hate you")
             document.getElementsById("Secret-link").innerHTML = "S"
             console.log(5)
             countSecret.innerHTML = ("Now leave me alone");
