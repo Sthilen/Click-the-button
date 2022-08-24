@@ -5,6 +5,9 @@ let countEL = document.getElementById("count-el")
 
 function increment() {
     count += 1;
+    if (count === 100) {
+        alert("Don't you have anything better to do?")
+    }
     return countEL.innerHTML = `${count}`
 }
 
